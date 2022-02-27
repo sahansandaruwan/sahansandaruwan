@@ -17,7 +17,6 @@
   <a href="https://github.com/MRwolfia/-github-readme-stats/tree/main"><img alt="MRwolfia's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MRwolfia&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117" /></a>
   <br/>
 
-<a href="https://github.com/MRwolfia/github-readme-activity-graph"><img alt="Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=MRwolfia&bg_color=0d1117&color=42aa15&line=e41890&point=FFFFFF&hide_border=true" /></a>
 
 <div align="center">
 
