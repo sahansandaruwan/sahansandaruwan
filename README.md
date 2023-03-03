@@ -12,7 +12,7 @@
 </p>
 
 
-![Sahan Sandaruwan's GitHub stats](https://github-readme-stats.vercel.app/api?username=sahansandaruwan&show_icons=true&theme=radical)
+![Sahan Sandaruwan's GitHub stats](https://github-readme-stats.vercel.app/api?username=sahansandaruwan&show_icons=true&theme=dark#gh-dark-mode-only)
 
 
 <!---
