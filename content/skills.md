@@ -1,0 +1,6 @@
+- HTML
+- CSS / Tailwind
+- JavaScript
+- Python
+- Git
+- UI Design

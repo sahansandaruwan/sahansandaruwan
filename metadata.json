@@ -1,0 +1,6 @@
+{
+  "name": "Sahan's Blog",
+  "description": "A minimalist, typography-first personal blog by Sahan Sandaruwan featuring essays on technology, design, and software systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

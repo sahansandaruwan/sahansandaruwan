@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-hn: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-serif: 'Newsreader', Georgia, Cambria, serif;
+    --font-sans: 'Ubuntu', 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-hn);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+.font-hn-reader {
+  font-family: var(--font-hn);
+}
+
+.font-serif-reader {
+  font-family: var(--font-serif);
+}
+
+.font-sans-reader {
+  font-family: var(--font-sans);
+}
+
+.font-mono-reader {
+  font-family: var(--font-mono);
+}
+
+/* Custom Paper & Reading Themes */
+.theme-light {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.theme-hn {
+  background-color: #f6f6ef;
+  color: #222222;
+}
+
+.theme-sepia {
+  background-color: #f4efe6;
+  color: #2a2421;
+}
+
+.theme-dark {
+  background-color: #141414;
+  color: #e4e4e7;
+}
+
+.theme-midnight {
+  background-color: #09090b;
+  color: #f4f4f5;
+}
+
+/* Reader Typography Styles for Markdown Content */
+.markdown-body {
+  word-break: break-word;
+}
+
+.markdown-body p {
+  margin-bottom: 1.5em;
+  line-height: var(--reader-line-height, 1.8);
+  font-size: var(--reader-font-size, 1.125rem);
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 1.8em;
+  margin-bottom: 0.8em;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+.markdown-body blockquote {
+  border-left: 2px solid currentColor;
+  opacity: 0.85;
+  padding-left: 1.25rem;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-style: italic;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5em;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5em;
+}
+
+.markdown-body li {
+  margin-bottom: 0.4em;
+  line-height: 1.7;
+}
+
+.markdown-body code:not(pre code) {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15em 0.35em;
+  border-radius: 0.25rem;
+  background-color: rgba(125, 125, 125, 0.12);
+}
+
+.markdown-body pre {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.theme-dark .markdown-body pre,
+.theme-midnight .markdown-body pre {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.markdown-body a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.markdown-body hr {
+  margin: 2.5em 0;
+  border: 0;
+  border-top: 1px solid currentColor;
+  opacity: 0.15;
+}
+
+.markdown-body img {
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  max-width: 100%;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.25);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.4);
+}

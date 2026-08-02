@@ -1,0 +1,3 @@
+- **Invoice Generator**: A functional web-app developed for creating, customizing, and exporting clean invoices effortlessly.
+- **AdFlow**: An automated tool engineered to parse, aggregate, and evaluate online tracking/advertisement metrics.
+- **More Open Source Repositories**: Explore additional small utilities, experimental scripts, and frontend configurations directly on GitHub.
