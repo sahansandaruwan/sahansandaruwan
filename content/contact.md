@@ -1,3 +1,0 @@
-- Email: cntct.sahansandaruwan@gmail.com
-- GitHub: https://github.com
-- LinkedIn: https://linkedin.com
