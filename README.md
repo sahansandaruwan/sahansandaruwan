@@ -1,10 +1,7 @@
 <p align="center">
-  <img 
-    src="https://raw.githubusercontent.com/sahansandaruwan/sahansandaruwan/5d05fc30433d8fdf397ab0b6fd260f8a317efab4/src/it%20crowd%20maurice%20moss%20GIF.gif"
-    width="500"
-    style="border-radius: 20px;"
-  >
+  <img src="https://raw.githubusercontent.com/sahansandaruwan/sahansandaruwan/8c23ca5c693d04a1bb9791cf1b49823fb917cb88/src/animetion.gif" width="500">
 </p>
+
 
 Hey, I’m Sahan Sandaruwan.
 
