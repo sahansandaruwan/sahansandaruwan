@@ -1,7 +1,8 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sahansandaruwan/sahansandaruwan/8c23ca5c693d04a1bb9791cf1b49823fb917cb88/src/animetion.gif" width="300">
+  <img src="https://raw.githubusercontent.com/sahansandaruwan/sahansandaruwan/e933f4e9a45e3330d5cca10b5324b23452c2804d/src/gif.gif" width="250">
 </p>
 
+🌱
 
 Hey, I’m Sahan Sandaruwan.
 
