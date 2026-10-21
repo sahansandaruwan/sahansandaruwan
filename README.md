@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sahansandaruwan/sahansandaruwan/e933f4e9a45e3330d5cca10b5324b23452c2804d/src/gif.gif" width="250">
+  <img src="https://raw.githubusercontent.com/sahansandaruwan/sahansandaruwan/main/src/gif.gif" width="250">
 </p>
 
 🌱
