@@ -1,0 +1,85 @@
+
+name: Random Profile GIF
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-random-gif:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Select random GIF and update README
+        run: |
+          python - <<'PY'
+          import random
+          from pathlib import Path
+
+          images = [
+              "src/gif.gif",
+              "src/img1.gif"
+          ]
+
+          selected_image = random.choice(images)
+
+          image_url = (
+              "https://raw.githubusercontent.com/"
+              "sahansandaruwan/sahansandaruwan/main/"
+              + selected_image
+          )
+
+          readme = Path("README.md")
+          content = readme.read_text(encoding="utf-8")
+
+          start_marker = "<!-- RANDOM_IMAGE_START -->"
+          end_marker = "<!-- RANDOM_IMAGE_END -->"
+
+          if start_marker not in content or end_marker not in content:
+              raise ValueError(
+                  "README.md must contain both random image markers."
+              )
+
+          before, remainder = content.split(start_marker, 1)
+          _, after = remainder.split(end_marker, 1)
+
+          image_block = f"""<!-- RANDOM_IMAGE_START -->
+          <p align="center">
+            <img src="{image_url}" width="250">
+          </p>
+          <!-- RANDOM_IMAGE_END -->"""
+
+          updated_content = before + image_block + after
+
+          if updated_content == content:
+              print("The selected GIF is already displayed.")
+          else:
+              readme.write_text(
+                  updated_content,
+                  encoding="utf-8"
+              )
+              print(f"Selected image: {selected_image}")
+          PY
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No README changes to commit."
+          else
+            git commit -m "Update random profile GIF"
+            git push
+          fi
