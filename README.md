@@ -1,6 +1,8 @@
+<!-- RANDOM_IMAGE_START -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/sahansandaruwan/sahansandaruwan/main/src/gif.gif" width="250">
 </p>
+<!-- RANDOM_IMAGE_END -->
 
 🌱
 
