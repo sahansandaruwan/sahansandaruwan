@@ -6,7 +6,7 @@
 
 🌱
 
-Hey, I’m Sahan Sandaruwan.
+Hey, I’m Sahan.
 
 I’m a self-taught tech enthusiast exploring AI, web development, and cybersecurity. Always learning, building, and experimenting.
 
